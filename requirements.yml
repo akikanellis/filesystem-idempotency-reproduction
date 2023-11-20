@@ -1,0 +1,6 @@
+---
+collections:
+  - name: ansible.posix
+    version: 1.5.4
+  - name: devsec.hardening
+    version: 8.8.0

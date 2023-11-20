@@ -1,0 +1,13 @@
+---
+- name: Converge
+  hosts: all
+
+  tasks:
+    - name: Update apt package cache
+      ansible.builtin.apt:
+        update_cache: true
+        cache_valid_time: 3600
+
+    - name: Harden OS
+      ansible.builtin.import_role:
+        name: devsec.hardening.os_hardening

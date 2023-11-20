@@ -1,0 +1,13 @@
+---
+driver:
+  name: vagrant
+
+platforms:
+  - name: instance
+    box: ubuntu/jammy64
+
+provisioner:
+  name: ansible
+
+verifier:
+  name: ansible
